@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeContainer_dashboard"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DashBoardFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <LinearLayout
+           android:visibility="gone"
+           android:id="@+id/layout_loader"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_centerInParent="true"
+           android:gravity="center">
+
+           <com.airbnb.lottie.LottieAnimationView
+               android:id="@+id/av_loader"
+               android:layout_width="@dimen/_200sdp"
+               android:layout_height="@dimen/_200sdp"
+               android:adjustViewBounds="true"
+               app:lottie_autoPlay="true"
+               app:lottie_fileName="failed_to_load.json"
+               app:lottie_loop="true" />
+
+
+       </LinearLayout>
+
+       <com.facebook.shimmer.ShimmerFrameLayout
+           android:id="@+id/shimmer_view_container"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="15dp"
+           android:orientation="vertical"
+           shimmer:duration="800">
+
+           <!-- Adding 7 rows of placeholders -->
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <include layout="@layout/shimmer_placeholder_layout" />
+               <include layout="@layout/shimmer_placeholder_layout" />
+               <include layout="@layout/shimmer_placeholder_layout" />
+               <include layout="@layout/shimmer_placeholder_layout" />
+               <include layout="@layout/shimmer_placeholder_layout" />
+               <include layout="@layout/shimmer_placeholder_layout" />
+               <include layout="@layout/shimmer_placeholder_layout" />
+               <include layout="@layout/shimmer_placeholder_layout" />
+               <include layout="@layout/shimmer_placeholder_layout" />
+               <include layout="@layout/shimmer_placeholder_layout" />
+               <include layout="@layout/shimmer_placeholder_layout" />
+               <include layout="@layout/shimmer_placeholder_layout" />
+           </LinearLayout>
+
+       </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recycler_dashboard"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:clipToPadding="false"/>
+
+   </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

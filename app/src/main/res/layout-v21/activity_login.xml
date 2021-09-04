@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F2F6"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/area2"
+        android:layout_above="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+        <RelativeLayout
+            android:id="@+id/area1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".65"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:src="@drawable/appicon"
+                android:layout_marginRight="@dimen/_10sdp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.35"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                app:counterEnabled="false"
+                app:counterMaxLength="0"
+                app:counterOverflowTextAppearance="@style/TextAppearance.Design.Counter.Overflow"
+                app:counterTextAppearance="@style/TextAppearance.Design.Counter"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                app:helperText="eg: example@gmail.com"
+                app:helperTextEnabled="true"
+                app:helperTextTextAppearance="@style/TextAppearance.Design.HelperText"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_username"
+                    style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:text=""
+                    android:inputType="textEmailAddress"
+                    android:textSize="@dimen/_16sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxStrokeColor="@color/colorPrimaryDark"
+                app:counterEnabled="false"
+                app:counterMaxLength="0"
+                app:counterOverflowTextAppearance="@style/TextAppearance.Design.Counter.Overflow"
+                app:counterTextAppearance="@style/TextAppearance.Design.Counter"
+                app:errorEnabled="true"
+                app:errorTextAppearance="@style/TextAppearance.Design.Error"
+                app:helperText="eg: 123456"
+                app:helperTextEnabled="true"
+                app:helperTextTextAppearance="@style/TextAppearance.Design.HelperText"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimary">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_password"
+                    style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:text=""
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/_16sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/button_background_submit"
+                android:text="@string/btn_login"
+                android:textAppearance="@style/BB_BottomBarItem_Fixed.TitleAppearance"
+                android:textColor="@color/text_color_white"
+                android:textSize="25dp" />
+
+
+            <!--<Button-->
+            <!--android:id="@+id/btn_linkToRegisterScreen"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="40dip"-->
+            <!--android:background="@null"-->
+            <!--android:text="@string/btn_link_to_register"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/text_color"-->
+            <!--android:textSize="15dp" />-->
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Developed By @RTChubs Ltd." />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

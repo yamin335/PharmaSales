@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="no_connection_view_title_text_size">28dp</dimen>
+    <dimen name="no_connection_view_margin">40dp</dimen>
+    <dimen name="no_connection_view_text_size">14dp</dimen>
+
+    <!-- shimmer -->
+    <dimen name="activityPadding">16dp</dimen>
+    <dimen name="placeholderImage">60dp</dimen>
+    <dimen name="placeholderTextHeight">18dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+
+</resources>

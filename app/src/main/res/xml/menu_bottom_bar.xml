@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/ic_dashboard"
+        id="@+id/menu_dashboard"
+        title="Dashboard"
+        />
+
+    <tab
+        icon="@drawable/ic_add"
+        id="@+id/menu_add_product"
+        title="Add Product"
+        />
+
+    <tab
+        icon="@drawable/ic_task"
+        id="@+id/menu_task"
+        title="Task"
+        />
+
+    <tab
+        icon="@drawable/ic_settings"
+        id="@+id/menu_settings"
+        title="Settings"
+        />
+
+</tabs>

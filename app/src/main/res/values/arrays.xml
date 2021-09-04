@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="discount_category">
+            <item>% of subtotal</item>
+            <item>fixed amount</item>
+    </string-array>
+
+    <string-array name="tax_category">
+        <item>% of subtotal</item>
+    </string-array>
+</resources>
